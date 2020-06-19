@@ -35,7 +35,7 @@ export const UserProfilePage:FC = ()=>{
                     </Col>
 
                     <Col xs={24} sm={24} md={12} lg={14}>
-                        <div className={'paper padding-10 margin-bottom-10'}>
+                        <div style={{height:'45vh'}} className={'paper padding-10 margin-bottom-10'}>
                             <CalendarCard/>
                         </div>
                     </Col>

@@ -12,9 +12,9 @@ interface UserCardProps{
 
 export const UserCard: FC<UserCardProps>= (props)=>{
     return (
-        <div style={{minHeight:'42vh'}} className={'paper padding-5 padding-bottom-10'}>
+        <div style={{minHeight:'38vh'}} className={'paper padding-5 padding-bottom-10'}>
             <Row gutter={{lg:2,md:2,sm:0,xs:0}}>
-                <Col xs={24} sm={24} md={12} lg={{span:12}}>
+                <Col xs={24} sm={24} md={12} lg={{span:10}}>
                     <Title style={{textAlign:'center'}} level={3}>{props.user.name}</Title>
                     <div>
                         <ImageAvatar
@@ -31,7 +31,7 @@ export const UserCard: FC<UserCardProps>= (props)=>{
 
 
                 <Col xs={24} sm={24} md={12} lg={{span:12}}>
-                    <div style={{height:'27vh',marginTop:'7vh'}}>
+                    <div style={{height:'27vh',marginTop:'4vh'}}>
                         <div style={{textAlign:'end',width:'70%',margin:'auto'}}>
                             <HeartOutlined style={{fontSize:'35px',marginRight:'20px'}} />
                             <MinusCircleOutlined style={{fontSize:'35px'}}/>
