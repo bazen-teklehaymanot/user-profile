@@ -52,7 +52,11 @@ export const UserCard: FC<UserCardProps>= (props)=>{
                         </div>
                     </div>
                     <div style={{width:'75%',margin:'auto'}}>
-                        <Button type={'primary'} size={'large'} danger block >Book</Button>
+                        <Button
+                            type={'primary'}
+                            size={'large'}
+                            danger
+                            block>Book</Button>
                     </div>
                 </Col>
             </Row>

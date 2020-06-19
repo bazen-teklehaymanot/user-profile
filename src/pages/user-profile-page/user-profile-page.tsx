@@ -9,7 +9,7 @@ import {DummyData} from "../../_infrastructure/constants/dummy-data";
 
 export const UserProfilePage:FC = ()=>{
     return (
-        <Row justify={'center'} className={'padding-top-10'}>
+        <Row justify={'center'} className={'padding-top-5'}>
             <Col sm={{span:23}} md={22} lg={{span:14}}>
                 <div>
                 <Row justify={'center'} gutter={{lg:8,md:4,sm:0,xs:0}}>
@@ -29,13 +29,13 @@ export const UserProfilePage:FC = ()=>{
                         </div>
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={10}>
-                        <div className={'margin-bottom-10'}>
+                        <div style={{maxHeight:'45vh',overflowY:'auto'}}  className={'margin-bottom-10'}>
                             <FeedbackListCard/>
                         </div>
                     </Col>
 
                     <Col xs={24} sm={24} md={12} lg={14}>
-                        <div className={'paper padding-10 margin-bottom-10'}>
+                        <div style={{height:'45vh'}} className={'paper padding-10 margin-bottom-10'}>
                             <CalendarCard/>
                         </div>
                     </Col>
