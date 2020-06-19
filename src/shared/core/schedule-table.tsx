@@ -13,7 +13,7 @@ const {Text} = Typography;
 export const ScheduleTable: FC = () =>{
     return (
         <div style={{overflowX:'hidden'}}>
-            <table style={{ width:'100%',overflowX:'hidden',maxWidth:'100%'}} >
+            <table width={'99%'}>
                 <thead>
                     <tr>
                         <th style={{border:'none'}}/>
@@ -32,44 +32,44 @@ export const ScheduleTable: FC = () =>{
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
 
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'60px'}
+                                height={'55px'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                     </tr>)
