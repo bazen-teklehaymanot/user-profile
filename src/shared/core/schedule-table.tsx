@@ -16,9 +16,9 @@ export const ScheduleTable: FC = () =>{
             <table width={'99%'}>
                 <thead>
                     <tr>
-                        <th style={{border:'none'}}/>
+                        <th style={{height:'5vh',border:'none'}}/>
                         { DummyData.DATES.map((value:DateTime,key)=>
-                            <th key={key}>
+                            <th style={{height:'5vh'}} key={key}>
                                 <Text type={'secondary'}>{ value.daySubstring }</Text><br/>
                                 <Text type={'secondary'}>{ value.date }</Text>
                             </th>
@@ -32,20 +32,7 @@ export const ScheduleTable: FC = () =>{
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'55px'}
-                                availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
-                        </td>
-                        <td>
-                            <ScheduleBox
-                                width={'100%'}
-                                height={'55px'}
-                                availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
-                        </td>
-
-                        <td>
-                            <ScheduleBox
-                                width={'100%'}
-                                height={'55px'}
+                                height={'5vh'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
@@ -63,13 +50,25 @@ export const ScheduleTable: FC = () =>{
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'55px'}
+                                height={'5vh'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                         <td>
                             <ScheduleBox
                                 width={'100%'}
-                                height={'55px'}
+                                height={'5vh'}
+                                availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
+                        </td>
+                        <td>
+                            <ScheduleBox
+                                width={'100%'}
+                                height={'5vh'}
+                                availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
+                        </td>
+                        <td>
+                            <ScheduleBox
+                                width={'100%'}
+                                height={'5vh'}
                                 availability={isScheduleFree()? ScheduleAvailability.Free:ScheduleAvailability.Reserved}/>
                         </td>
                     </tr>)

@@ -10,7 +10,7 @@ export const CalendarCard:FC<CalendarCardProps> =( ) =>{
     return (
         <div>
             <ScheduleTable/>
-            <Button style={{ width:'99%',marginTop:'2vh',marginBottom:'2vh',height:'5vh'}} >CHECK AVAILABILITY</Button>
+            <Button style={{ width:'99%',marginTop:'15px',marginBottom:'5px',height:'5vh'}} >CHECK AVAILABILITY</Button>
         </div>
     )
 };
